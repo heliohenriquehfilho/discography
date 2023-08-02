@@ -1,0 +1,153 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+    <link rel="sortcut icon" href="/static/fastlife/fastlife.jpg" type="image/x-icon" />
+
+    <style>
+        @font-face {
+            font-family: 'Six Caps';
+            src: url('path-to-your-font/sixcaps-webfont.woff2') format('woff2'),
+                url('path-to-your-font/sixcaps-webfont.woff') format('woff');
+            /* Add other font formats if necessary */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            height: 97%;
+            vertical-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            background-image: linear-gradient(90deg, #0d2937, #1e4548,  #325183, #1e3d5e);
+            color: #ffde59;
+            font-family: 'Six Caps', sans-serif;
+            font-size: 21px;
+        }
+        audio::-webkit-media-controls-panel{
+            background-color: #627f6d;
+        }
+        audio{
+            padding: 2px;
+            margin: 2px;
+            height: 20px;
+            font-family: 'GenericG50CCTypicDEMO';
+        }
+        h1{
+            margin: 1px;;
+        }
+        .cont{
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        .music{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            font-size: 12px;
+        }
+        .part1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            font-size: 12px;
+        }
+        .part2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            font-size: 12px;
+        }
+        .cover{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+    </style>
+
+    <body>
+        <a href="{{ url_for('home') }}"> HOME </a>
+        <div class="cont">
+            <div class="cover">
+                <h1> 速い人生 </h1>
+                <img src="/static/fastlife/fastlife.jpg" width="400">
+                <h1> ETHAN ELIO </h1>
+            </div>
+    
+            <div class="music">
+                <div class="part1">
+                    <h1> Lost in Lust (Intro) </h1>
+                    <audio controls>
+                        <source src="static\fastlife\01 - Lost in Lust (Intro) - Demo.mp3">
+                    </audio>
+            
+                    <h1 style="color:#4e6875"> FASTLIFE </h1>
+                    <audio controls style="opacity: 50%;">
+                        <source src="static\fastlife\02 - FASTLIFE - Demo.mp3">
+                    </audio>
+            
+                    <h1> feel something </h1>
+                    <audio controls>
+                        <source src="static\fastlife\03 - feel something.mp3">
+                    </audio>    
+            
+                    <h1> Numb The Pain Away </h1>
+                    <audio controls>
+                        <source src="static\fastlife\04 - Numb The Pain Away - Demo.mp3">
+                    </audio>
+            
+                    <h1> FUCK FUCK FUCK </h1>
+                    <audio controls>
+                        <source src="static\fastlife\05 - FUCK! FUCK! FUCK! - Demo.mp3">
+                    </audio>
+                </div>
+                
+                <div class="part2">
+                    <h1> Peace Of Mind </h1>
+                    <audio controls>
+                        <source src="static/fastlife/06 - Peace of Mind - Demo.mp3">
+                    </audio>
+            
+                    <h1> Echoes Of Pain (Interlude) </h1>
+                    <audio controls>
+                        <source src="static/fastlife/07 - Echoes of Pain (Interlude) - Demo.mp3">
+                    </audio>
+            
+                    <h1> Healin </h1>
+                    <audio controls>
+                        <source src="static/fastlife/08 - Healin - Demo.mp3">
+                    </audio>
+            
+                    <h1> BABYBOY </h1>
+                    <audio controls>
+                        <source src="static/fastlife/09 - Babyboy - Demo.mp3">
+                    </audio>
+            
+                    <h1> Selfish </h1>
+                    <audio controls>
+                        <source src="static/fastlife/10 - Selfish.mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

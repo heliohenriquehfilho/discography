@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  </head>
+
+  <body>
+    <h1>ETHAN ELIO'S DISCOGRAPHY</h1>
+    
+    <br>
+    <div id="covers">
+        <a href="{{ url_for('fastlife') }}">
+            <img id="cover" src="{{ url_for('static', filename='Images/fastlife.jpg') }}" alt="Fast Life Album Cover" />
+        </a>
+
+        <a href="{{ url_for('questions') }}">
+            <img src="{{ url_for('static', filename='Images/questions.png') }}"/>
+        </a>
+
+        <a href="#">
+            <img src="{{ url_for('static', filename='Images/lost in the sound.jpeg') }}"/>
+        </a>
+
+        <a href="#">
+            <img src="{{ url_for('static', filename='Images/midnight thoughts.jpg') }}"/>
+        </a>
+
+        <a href="#">
+            <img src="{{ url_for('static', filename='Images/track 04.jpg') }}">
+        </a>
+
+    </div>
+    <br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Type</th>
+        </tr>
+        <tr>
+            <td>FASTLIFE</td>
+            <td>2023</td>
+            <td>Album</td>
+        </tr>
+        <tr>
+            <td>QUESTIONS</td>
+            <td>2022</td>
+            <td>EP</td>
+        </tr>
+        <tr>
+            <td>Lost In The Sound</td>
+            <td>2020</td>
+            <td>EP</td>
+        </tr>
+        <tr>
+            <td>i don't know, i guess i'm troubled</td>
+            <td>2019</td>
+            <td>Single</td>
+        </tr>
+        <tr>
+            <td>Midnight Thoughts</td>
+            <td>2019</td>
+            <td>EP</td>
+        </tr>
+        <tr>
+            <td>TRACK 04 (THIS IS THE END) </td>
+            <td>2019</td>
+            <td>Single</td>
+        </tr>
+    </table>
+</body>
+</html>
